@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Bokor:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
 *{
     padding: 0;
     margin: 0;
@@ -6,28 +8,90 @@
 
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 section{
     height: 100vh;
     width: 100%;
+    padding-top: 70px;
 }
+
 
 h2 {
     text-align: center;
+}
+
+
+
+.nav-content{
+position: fixed;
+width: 100%;
+z-index: 9999;
+padding: .6rem 10%;
+justify-content: space-between;
+background: radial-gradient(circle at bottom left, #dbae34 0%,#e1d6b5 20%, #94700f 110%);
+box-shadow: 2px 2px 8px -2px rgb(60, 59, 59);
 }
 
 .container {
     background-color: rgb(189, 184, 184);
 }
 
-.skills {
+#skills-main {
+
     text-align: right; 
     padding-top: 10px; 
     padding-bottom: 10px; 
     padding-right: 10px;
     color: whitesmoke;
-    background-color: #000000;
+    background-color: #01021f;
+    
 }
-
+.toolsh2{
+    background-color: cyan;
+    border-style: inset;
+    width: 100%;
+    height: 20%;
+    margin-bottom: auto;
+    display: flex;
+    justify-content: center;
+    
+}
+.headertools{
+    font-family: "Bokor", system-ui;
+    color:  #404040;
+    font-size: 80px;
+    
+}
+.toolsdiv{
+    text-align: center;
+    box-sizing: border-box;
+    display: inline-block;
+    border-style: inset;
+    width: 100%;
+    height: 50%;
+    padding: 5px;
+    background-color: #404040;
+    
+}
+.toolsclick{
+    text-decoration: none;
+    
+}
+.tools-img{
+    margin: auto;
+    width: 30%;
+    display: inline-block;
+    border-style: none;
+    height: 100%;
+    background-color: #404040;
+}
+.tools-img:hover{ 
+    background-color: cyan;
+    transition: all 0.25s ease-out;
+}
 .html {
     width: 90%; 
     background-color: #68b89b;
@@ -37,6 +101,30 @@ h2 {
     animation-iteration-count: 1;
 }
 
+.shape1 {
+    height: 220px;
+    width: 220px;
+    background:linear-gradient(
+        #ff0e72,
+        #ff66a6
+    );
+    border-radius: 50%;
+    posiotion:absolute;
+    bottom: -100px;
+    left:-80px
+}
+
+.shape2 {
+    height: 220px;
+    width: 220px;
+    background:linear-gradient(
+        #8205ca,
+        #db08f3
+    );
+    border-radius: 50%;
+    posiotion:left;
+    left:-200px;
+}
 
 @keyframes bar1{
     from {
@@ -55,6 +143,13 @@ h2 {
     animation-duration: 2s;
     animation-iteration-count: 1;
 } 
+
+.skillsbox {
+    text-align: left;
+    margin-top: 50px;
+    margin-left: 50px;
+    margin-right: 900px;
+}
 
 
 @keyframes bar2{
@@ -84,23 +179,103 @@ h2 {
     }
 }
 
-.nav-content{
-
-
-}
 
 .link-contener{
+width: 100%;
 display: flex;
-justify-content: space-between;
-padding: 1rem 10%;
+font-family:"Bokor" , system-ui ;
+list-style: none;
+align-items: center;
 }
+
+.link-contener li:nth-child(6){
+margin-left: auto;
+display: flex;
+}
+.link-contener li:nth-child(-n+5){
+margin-left: 5%;
+}
+
+.link-contener li:nth-child(6) a:nth-child(2){
+    margin-left: 2rem; 
+}
+
+.link-contener a, .nav-content-img a{
+  display: flex;
+}
+
+
 
 .link-contener li{
     display: inline;
-    font-size: 1.2rem;
+    font-size: 1.4rem;
     font-weight: 600;
+    letter-spacing: 1px;
+    color: radial-gradient(circle at bottom left, #ae9898 , #250808 );
 }
+
+.link-contener li a, .blank i{
+    color: rgba(91, 7, 7, 0.7);
+}
+.link-contener li a:hover, .blank i:hover{
+    color: rgba(91, 7, 7, 1);
+}
+
+.blank{
+display: none;
+margin: .5rem;
+background-color: transparent;
+border: 0;
+box-shadow: 2px 2px 4px -2px rgb(55, 53, 53);
+}
+.blank:hover{
+scale: 1.1;
+}
+
+.fas.fa-bars {
+    padding: .5rem;
+    font-size: 2rem;
+}
+.nav-img{
+    width: 2.5rem;
+}
+.nav-img:hover{
+    scale: 1.1;
+}
+
+
 
 @media (height > 600px) {
     
 }
+
+@media(max-width: 720px){
+   
+    .blank{
+        display: inline;
+    }
+   
+   
+    .link-contener {
+        display: none;
+        align-items: start;
+    }
+    .link-contener li:nth-child(6){
+        margin-left: 5%;
+    }
+
+.link-contener li:nth-child(6) a:nth-child(2){
+    margin-left: .5rem;
+}
+
+    .blank:focus + .link-contener , .link-contener:hover{
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+
+
+
+
+
