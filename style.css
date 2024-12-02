@@ -39,13 +39,15 @@ box-shadow: 2px 2px 8px -2px rgb(60, 59, 59);
     background-color: rgb(189, 184, 184);
 }
 
-.skills {
+#skills-main {
+
     text-align: right; 
     padding-top: 10px; 
     padding-bottom: 10px; 
     padding-right: 10px;
     color: whitesmoke;
-    background-color: #000000;
+    background-color: #01021f;
+    
 }
 .toolsh2{
     background-color: cyan;
@@ -99,6 +101,30 @@ box-shadow: 2px 2px 8px -2px rgb(60, 59, 59);
     animation-iteration-count: 1;
 }
 
+.shape1 {
+    height: 220px;
+    width: 220px;
+    background:linear-gradient(
+        #ff0e72,
+        #ff66a6
+    );
+    border-radius: 50%;
+    posiotion:absolute;
+    bottom: -100px;
+    left:-80px
+}
+
+.shape2 {
+    height: 220px;
+    width: 220px;
+    background:linear-gradient(
+        #8205ca,
+        #db08f3
+    );
+    border-radius: 50%;
+    posiotion:left;
+    left:-200px;
+}
 
 @keyframes bar1{
     from {
@@ -117,6 +143,13 @@ box-shadow: 2px 2px 8px -2px rgb(60, 59, 59);
     animation-duration: 2s;
     animation-iteration-count: 1;
 } 
+
+.skillsbox {
+    text-align: left;
+    margin-top: 50px;
+    margin-left: 50px;
+    margin-right: 900px;
+}
 
 
 @keyframes bar2{
@@ -149,9 +182,6 @@ box-shadow: 2px 2px 8px -2px rgb(60, 59, 59);
 
 .link-contener{
 width: 100%;
-}
-
-.link-contener{
 display: flex;
 font-family:"Bokor" , system-ui ;
 list-style: none;
