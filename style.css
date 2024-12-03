@@ -31,7 +31,7 @@ width: 100%;
 z-index: 9999;
 padding: .6rem 10%;
 justify-content: space-between;
-background: radial-gradient(circle at bottom left, #dbae34 0%,#e1d6b5 20%, #94700f 110%);
+background: radial-gradient(circle at bottom left, #dbae34 0%, #e1d6b5 20%, #94700f 110%);
 box-shadow: 2px 2px 8px -2px rgb(60, 59, 59);
 }
 
@@ -244,6 +244,58 @@ scale: 1.1;
 }
 
 
+.main-content{
+    display: flex;
+}
+
+.decoration-box-green{
+    width: 300px;
+    height: 38vh;
+background-color: #162006e6;
+z-index: -1;
+position: absolute;
+left: 4%;
+}
+
+.decoration-box-yellow{
+    width: 200px;
+    height: 30vh;
+    background-color: hwb(40 7% 18% / 0.941);
+    position: absolute;
+    opacity: 0.7;
+    bottom: 1%;
+    left: 32rem;
+
+}
+
+.scrol-photo{
+    overflow: hidden;
+    width: 500px;
+    height: 70vh;
+    margin: 4rem 0 4rem 10%; 
+   
+ }
+
+.scrol-content{
+  display: flex;
+  animation: slide 12s infinite;
+}
+
+.scrol-photo img{
+    object-fit: cover;
+    width: 100%;
+}
+
+.scrol-photo img:nth-child(1), .scrol-photo img:nth-child(4){
+transform: translateY(-8%);
+}
+
+.main-text-content{
+    margin: 0 auto;
+    text-align: center;
+    padding: 5%;
+}
+
 
 @media (height > 600px) {
     
@@ -276,6 +328,15 @@ scale: 1.1;
 
 
 
+
+
+
+@keyframes slide {
+    0%, 10% {transform: translateX(0);} 
+    15%, 45% {transform: translateX(-100%);}
+    50%, 80% {transform: translateX(-200%);}
+    85%, 100% {transform: translate(-300%);}
+}
 
 
 
