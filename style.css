@@ -59,6 +59,12 @@ box-shadow: 2px 2px 8px -2px rgb(60, 59, 59);
     justify-content: center;
     
 }
+.adds-main{
+    height: 20%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
 .headertools{
     font-family: "Bokor", system-ui;
     color:  #404040;
@@ -91,6 +97,13 @@ box-shadow: 2px 2px 8px -2px rgb(60, 59, 59);
 .tools-img:hover{ 
     background-color: cyan;
     transition: all 0.25s ease-out;
+}
+.projects-main{
+    height: 20%;
+    width: 100%;
+}
+.projectsh2{
+    position: top;
 }
 .html {
     width: 90%; 
