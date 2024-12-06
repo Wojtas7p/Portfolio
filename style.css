@@ -5,7 +5,7 @@
     margin: 0;
     text-decoration: none;    
     box-sizing: border-box;
-
+    font-family: "Bokor", system-ui;
 }
 
 html{
@@ -67,8 +67,8 @@ box-shadow: 2px 2px 8px -2px rgb(60, 59, 59);
 }
 .headertools{
     font-family: "Bokor", system-ui;
-    color:  #404040;
-    font-size: 80px;
+    color:#01021f
+    font-size:xx-large
     
 }
 .toolsdiv{
@@ -110,6 +110,7 @@ box-shadow: 2px 2px 8px -2px rgb(60, 59, 59);
     padding: 0;
     font-size: 40px;
     background-color: #590fcf54;
+    font-size: large
 }
 .projectsh2:hover{
     transition: 2s ease-in-out;
@@ -130,6 +131,7 @@ box-shadow: 2px 2px 8px -2px rgb(60, 59, 59);
     padding: 50px;
     font-size: 20px;
     position: relative;
+    font-family: 'Times New Roman';
 }
 .projectsdivs:hover{
     transition: 1s ease-in-out;
