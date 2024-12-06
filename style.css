@@ -125,19 +125,26 @@ box-shadow: 2px 2px 8px -2px rgb(60, 59, 59);
     height: 50%;
     padding: 50px;
     font-size: 20px;
-    background-color: whitesmoke;
+}
+.projectsdivs::before{
+    content: '';
+    position: absolute;
+    opacity: 0;
+    z-index: -1;
+    background-image: url(img/stars.gif);
+    transition: opacity 1s ease-in-out;
+    
 }
 .projectsclick{
     text-decoration: none;
-    color:yellow;
+    color: inherit;
 }
 .projectspar{
     margin: 0;
     padding: 0;
 }
-.projectsdivs:hover{
-    transition: 1s ease-in-out;
-    background-image: url(img/stars.gif);
+.projectsdivs:hover::before{
+    opacity: 1;
     color: white;
 }
 .html {
