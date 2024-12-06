@@ -333,9 +333,17 @@ transform: translateY(-8%);
 }
 
 .main-text-content{
-    margin: 0 auto;
+    margin: 1rem auto 2rem;
     text-align: center;
-    padding: 5%;
+    padding: 1%;
+    width: 350px;
+    box-shadow: 0 1px 5px 1px rgb(25, 27, 19);
+}
+
+.decoration-box-shine{
+    width: 20px;
+    height: 20px;
+    background-color: yellow;
 }
 
 .contact-main {
