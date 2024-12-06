@@ -111,6 +111,10 @@ box-shadow: 2px 2px 8px -2px rgb(60, 59, 59);
     font-size: 40px;
     background-color: #590fcf54;
 }
+.projectsh2:hover{
+    transition: 2s ease-in-out;
+    background-color: #d71995e7;
+}
 .projectsdiv{
     margin: 0;
     padding: 0;
@@ -125,20 +129,31 @@ box-shadow: 2px 2px 8px -2px rgb(60, 59, 59);
     height: 50%;
     padding: 50px;
     font-size: 20px;
-    background-color: whitesmoke;
+    position: relative;
+}
+.projectsdivs:hover{
+    transition: 1s ease-in-out;
+    color: rgba(255, 255, 255, 0.8);   
+}
+.projectsdivs::before{
+    content: '';
+    position: absolute;
+    opacity: 0;
+    inset: 0;
+    z-index: -1;
+    background-image: url(img/stars.gif);
+    transition: opacity 1s ease-in-out;   
 }
 .projectsclick{
     text-decoration: none;
-    color:yellow;
+    color: inherit;
 }
 .projectspar{
     margin: 0;
     padding: 0;
 }
-.projectsdivs:hover{
-    transition: 1s ease-in-out;
-    background-image: url(img/stars.gif);
-    color: white;
+.projectsdivs:hover::before{
+    opacity: 1;
 }
 .html {
     width: 90%; 
