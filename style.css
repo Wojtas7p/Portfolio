@@ -427,6 +427,7 @@ transform: translateY(-8%);
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    padding: 0;
 }
 
 .contact-main-shadow {
@@ -448,15 +449,11 @@ transform: translateY(-8%);
 .contact-main-text h1 {
     font-size: 36px;
     margin: 0;
-}
-
-.contact-main-text h2 {
-    font-size: 18px;
-    margin: 10px 0;
+    opacity: 0.9;
 }
 
 form {
-    background-color: rgba(255, 255, 255, 0.9); 
+    background-color: rgba(255, 255, 255, 0.8); 
     width: 50%; 
     padding: 20px;
     border-radius: 10px; 
@@ -471,6 +468,10 @@ form input, form textarea, form label {
     margin-bottom: 15px; 
     font-size: 16px;
 }
+form label {
+    color:#406889;
+    font-weight: bold;
+}
 
 form input[type="submit"] {
     background-color: #a21d13;
@@ -484,4 +485,10 @@ form input[type="submit"] {
 
 form input[type="submit"]:hover {
     background-color: #b7281c;
+}
+
+.Tekst {
+bottom: 0;
+text-align: left;
+width: 90%;
 }

@@ -111,14 +111,16 @@
                     <form action="#">
                         <div class="name">
                             <label for="fname">First name:</label><br>
-                            <input type="text" id="fname" name="fname"><br>
+                            <input type="text" id="fname" name="fname" required autofocus autocomplete="off"><br>
                         </div>
                         <div class="email">
                             <label for="email">Email:</label><br>
-                            <input type="email" id="email" name="email"><br>
+                            <input type="email" id="email" name="email" required autocomplete="off"><br>
                         </div>
+                            <div class="Tekst">
                         <label for="story">Write to me:</label><br>
-                        <textarea id="story" name="story" rows="5" cols="33">Cześć, czy powiesz mi jak... </textarea><br>
+                            </div>
+                        <textarea id="story" name="story" rows="5" cols="33" placeholder="Cześć, czy powiesz mi jak..." required></textarea><br>
                         <input type="submit" value="Submit">
                     </form>
                 </div>
